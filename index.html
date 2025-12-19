@@ -3,66 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>High-End Web Techniques - Parallax Scrolling</title>
+    <title>Valtira - Digital Innovation Firm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section with Parallax -->
-    <section class="hero-parallax">
-        <div class="parallax-layer" data-speed="0.5">
-            <div class="hero-content">
-                <h1 class="hero-title">High-End Web Techniques</h1>
-                <p class="hero-subtitle">Exploring Parallax Scrolling & Modern Effects</p>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="images/logo.svg" alt="Valtira" />
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#services">Service</a>
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
-        <div class="parallax-background" data-speed="0.3"></div>
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="home" class="intro-section">
+        <h1 class="intro-heading">Technology<br>Together</h1>
+        <img src="images/shape.png" alt="Shape" class="overlay-shape">
     </section>
 
-    <!-- Content Section 1 -->
-    <section class="content-section">
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-bg"></div>
         <div class="container">
-            <h2>Parallax Scrolling</h2>
-            <p>Parallax scrolling creates a depth effect by moving background elements at different speeds than foreground elements as you scroll.</p>
+            <h1 class="about-heading">Who we are.</h1>
+            <p class="about-text">
+                Our expertise covers a full range of digital services, from digital transformation and custom software development to SEO strategies and e-commerce solutions.
+            </p>
+            <p class="about-text">
+                We combine applied AI, cloud technology, and DevOps to deliver optimized business performance. At Valtira, we blend technology passion with deep business understanding to transform your digital journey.
+            </p>
+            <p class="about-text">
+                Together, let's unlock your full digital potential.
+            </p>
         </div>
     </section>
 
-    <!-- Parallax Image Section -->
-    <section class="parallax-image-section" data-speed="0.6">
-        <div class="parallax-image"></div>
-        <div class="overlay-content">
-            <h2>Immersive Experience</h2>
-            <p>Create engaging, dynamic user experiences</p>
-        </div>
+    <!-- Video Section -->
+    <section class="video-section">
+        <video class="full-width-video" autoplay muted loop playsinline>
+            <source src="images/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </section>
 
-    <!-- Content Section 2 -->
-    <section class="content-section">
+    <!-- Work Section -->
+    <section id="work" class="work-section">
         <div class="container">
-            <h2>Modern Web Design</h2>
-            <p>Combining cutting-edge techniques with beautiful design to create memorable experiences.</p>
+            <h1 class="work-heading">Our Work.</h1>
+            <div class="work-divider"></div>
+            <div class="projects-list">
+                <div class="project-item">
+                    <div class="project-info">
+                        <div class="project-category">Custom Development, Experience Design</div>
+                        <h4 class="project-title">MyAtlas</h4>
+                    </div>
+                    <div class="project-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L12 15L17 10" stroke="#265be6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="project-divider"></div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <div class="project-category">Cloud Solutions, Custom Development, DevOps</div>
+                        <h4 class="project-title">AMC+</h4>
+                    </div>
+                    <div class="project-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L12 15L17 10" stroke="#265be6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="project-divider"></div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <div class="project-category">Cloud Solutions, Digital Marketing</div>
+                        <h4 class="project-title">HealthPartners</h4>
+                    </div>
+                    <div class="project-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 10L12 15L17 10" stroke="#265be6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="project-divider"></div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Multi-layer Parallax -->
-    <section class="multi-parallax">
-        <div class="parallax-layer-1" data-speed="0.2"></div>
-        <div class="parallax-layer-2" data-speed="0.4"></div>
-        <div class="parallax-layer-3" data-speed="0.6"></div>
-        <div class="parallax-content">
-            <h2>Layered Depth</h2>
-            <p>Multiple layers create stunning visual depth</p>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="services-scroll">
+            <div class="services-scroll-content">
+                <span class="service-name active">Storyboarding.</span>
+                <span class="service-name">Art Direction.</span>
+                <span class="service-name">Creative Direction.</span>
+                <span class="service-name">Sound Design.</span>
+                <span class="service-name">Illustration.</span>
+                <span class="service-name">2D Animation.</span>
+                <span class="service-name">3D Animation.</span>
+                <span class="service-name">UI Animation.</span>
+                <span class="service-name">Product Rendering.</span>
+                <span class="service-name">Photography.</span>
+            </div>
         </div>
     </section>
 
-    <!-- Final Content Section -->
-    <section class="content-section">
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
         <div class="container">
-            <h2>Performance Optimized</h2>
-            <p>All effects are optimized for smooth 60fps performance across devices.</p>
+            <h3 class="section-label">Contact Us.</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Get In Touch</strong>
+                    <p>Ready to transform your digital journey? Let's discuss how Valtira can help unlock your full digital potential.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <script src="script.js"></script>
 </body>
 </html>
-
